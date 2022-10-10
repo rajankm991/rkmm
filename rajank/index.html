@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+    </head>
+<body>
+    <input id="mysearch" name="searchitem" type="text" placeholder="Search in page">
+    <button id="button" onclick="search();"><span> Search</span></button>
+<br><br>
+
+<center>    
+<div id="all" >
+   
+       <div id="title">
+    <h0 style="font-size: 100px; color:rgb(33, 29, 247)" > Er. Rajan Mishra</h0>   <!--<Internal style >-->
+        <img src="image/logo.jpg" width="100px" height="80px">
+        <nav class="nav">
+            <!--a href="index.html" title="Welcome to Home Page">Home</a> &nbsp; &nbsp; &nbsp;
+            -->
+            <a href="index.html" class="tooltip">Home<span>You are here...</span></a>
+
+        </nav><hr>
+        <center>
+        <br>
+          <div id="home">
+
+            <div id="slide" >
+                <img class="mySlides" src="image/DP.jpg" style="width:100%">
+                <img class="mySlides" src="image/Rajan.jpg" style="width:100%">
+                <img class="mySlides" src="image/logo.jpg" style="width:100%">
+                
+              </div>
+              
+
+        
+        <h1>Solution-Oriented and</h1>
+        <h2>Being Professional...</h2><br>
+     <br>
+     <section class="mygoal"><h3>My Goals</h3>
+        <p id="p">
+            I am always looking for an opportunity to work with a team that runs on clear communication. I try to align myself with a company that I believe in and where I can create positive change. I am always looking to learn more and am open to work on challenging projects. <br> <br> Currently, I am working with <b>Cognizant Pvt. Ltd.</b> <br>as <br> <br> EAS Oracle Peoplesoft <br> <b> Programmer Analyst</b>.
+        </p> </section>
+    
+        <div id="hovers">
+    <a href="https://www.cognizant.com" target="index"><img src="image/cts.gif" width="auto"></a>
+    </div>
+
+    <section class="myskill"><h3>My Skillset</h3>
+        <p id="p1">
+            I possess a sharp eye, which I use to find the smallest errors. I work well under pressure and can produce high-quality work in short periods of time. I'm adaptable to the situation. I have strong interpersonal skills and work with a wide variety of people.
+        </p> </section>
+    <img src="image/logown.jpg" width="auto" height="auto"></div>  <hr>  
+
+
+    <h1 class="page-heading">Resume</h1><br>
+    <div id="about">
+    <img src="image/Resume.jpg"  alt="resume"  ><br>
+    <a href="image/RajanResume.pdf" download="Rajan Mishra" class="tooltip">Download <span>From here you can download it..</span></a>
+
+    </div> <br>
+   
+    <img src="image/logo.gif" width="23.5%" ><hr>
+
+
+    <h1 class="page-heading">Contact Me</h1><br>
+    <div id="form">
+    <iframe src="https://formsubmit.co/el/nixofe" width=80% height="750"></iframe>
+    <br><p1> <b> Note:</b> Here, I am using an external & secure platform for message submission. </p1>
+    <br>
+    <img src="image/logo.gif" width="20%"></div>
+
+
+
+
+  
+<hr><footer>
+    Copyright &copy; 2022 Rajan Mishra - All Rights Reserved. &nbsp; <span class="separator">|</span> Design by  <a href="https://www.linkedin.com/in/rajankm991/" target="home" title="Linkedin Profile">Rajan</a><br>
+    Thanks... Have a Good Day..<img src="image/verify.gif"width="25">
+</footer></center>
+</div>
+
+<script type="text/javascript">
+    const p = document.getElementById("p");
+    const q = document.getElementById("p1");
+    function search(){
+        let input = document.getElementById("mysearch").value;
+        if(input !== ""){
+            let regExp = new RegExp(input, "gi");
+            p.innerHTML= (p.textContent).replace(regExp,"<mark>$&</mark>");
+            p1.innerHTML= (p1.textContent).replace(regExp,"<mark>$&</mark>");
+            alert("Scroll down to see result..");
+        }
+    }
+</script>
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body></html>

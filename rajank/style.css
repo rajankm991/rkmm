@@ -1,0 +1,234 @@
+body{
+
+    background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+    margin: 0;
+}
+#mysearch{
+    float:top;
+    margin:10px 10px auto;
+}
+/*slide*/
+
+.mySlides {display:none;}
+#slide{
+    width: 200px;
+    height: 250px;
+}
+/**/
+input{
+    background: #eeeeee;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #212121;
+    font-size: 1rem;
+    outline: none;
+}
+button{
+    border-radius: 50px;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #212121;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    background: #aedaed;
+
+}
+button:hover{
+    background-color:#12ec74 ;
+}
+button:hover span {
+    display: none;
+  }
+button:hover:before {
+    content: "Go";
+  }
+
+
+.link-title{
+    text-decoration: none;
+    font-size: 24px;
+    color: #444444;
+
+}
+.nav{
+    background: #aedaed;
+    padding: 6px 0 6px 40px;
+    font-size: 18px;
+    box-shadow: 0px 4px 5px 3px;
+
+}
+
+
+
+
+
+.nav:hover{
+    color: #023af5;
+}
+
+h1{
+    margin: 0px;
+    color: #869843;
+    font-size: 35px;
+    font-family: "Arial Narrow", "Nyriad Pro" ;
+    font-weight: normal;
+    text-emphasis: justify ;
+}
+h2{
+    color: rgb(131, 97, 160);
+    font-size: 30px;
+    margin: 20px 0 5px 0;
+    text-emphasis: justify ;
+
+}
+h3{
+    color: rgb(60, 81, 183);
+    font-size: 25px;
+    margin: 20px 0 5px 0;
+    text-emphasis: justify ;
+}
+#hovers{
+    width: auto;
+}
+
+#hovers:hover{
+    background-color: #023af5;
+    color: #040505;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    
+}
+p1{
+    font-size: 10px;
+    text-align: center;
+    
+}
+footer{
+    padding: 6px 40px 6px 40px;
+    background: #d6d6d6;
+    font-family: "Lucida Sans Unicode";
+    color: #444444;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: right;
+    text-emphasis: justify ;
+}
+footer a{
+    text-decoration:underline;
+    text-decoration-color: #f52602;
+    color: #4007fa;
+}
+.separator{
+    color: #af1212;
+    font-size: 11px;
+}
+
+#all {
+    width: 80%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+
+}
+
+#title {
+    text-align: left;
+    width:95%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+ 
+}
+
+
+#home {
+    width: 85%;
+     
+     padding: 10px;
+     margin: 0 auto;
+     border-radius: 5px;
+     background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+
+}
+
+#home img{
+
+    width:20%;
+}
+
+/***********About page**********/
+
+
+#about {
+    width: 85%;
+     box-shadow: 0px 9px 13px 5px;
+     padding: 10px;
+     margin: 0 auto;
+     border-radius: 5px;
+     background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+
+}
+ #about img{
+    justify-content: center;
+    float: inline-start;
+    width:99%;
+   /* box-shadow: 0px 4px 5px 3px;*/
+    
+
+}
+a:hover{
+    background-color: #7290f2;
+    color: #040505;
+    border-radius: 5px;
+    padding: 8px;
+    opacity: 1;
+}
+
+ /********Contact*************/
+  #form{
+     width: 85%;
+     box-shadow: 0px 9px 13px 5px;
+     padding: 10px;
+     margin: 0 auto;
+     border-radius: 5px;
+     background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+ 
+    }
+ iframe{
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
+    
+     /*width: 100%;*/
+ }
+
+ .page-heading{
+     text-align: center;
+ }
+/*Tool tip hover*/
+a.tooltip {
+    
+    text-decoration: none;
+  }
+  a.tooltip:hover {
+    cursor: help;
+    position: relative;
+  }
+  a.tooltip span {
+    display: none;
+  }
+  a.tooltip:hover span {
+    border: #666 2px dotted;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    z-index: 100;
+    background: #e3e3e3;
+    color: #023af5;
+    left: 0px;
+    margin: 15px;
+    width: 160px;
+    position: absolute;
+    top: 15px;
+    text-decoration:dotted;
+  }
