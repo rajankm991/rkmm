@@ -6,7 +6,9 @@ body{
 }
 #mysearch{
     float:top;
-    margin:10px 10px auto;
+    margin:10px 70px auto;
+    
+   
 }
 
 input{
@@ -46,7 +48,7 @@ button:hover:before {
 
 }
 .container{
-    width: 95%;
+    width: 90%;
     margin: 15px auto;
     /*background-image: url("../image/b.jpg");*/
     background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(210, 235, 249, 0.5)),url("image/b.jpg");
